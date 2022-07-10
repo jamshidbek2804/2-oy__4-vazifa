@@ -1,0 +1,25 @@
+.hero {
+  width: 100%;
+  &__container {
+    @include container;
+  }
+  &__bg {
+    width: 1280px;
+    height: 450px;
+    background-image: url(/img/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__info {
+    max-width: 486px;
+    margin-left: 85px;
+    padding-top: 135px;
+  }
+  &__title {
+    @include title-font;
+  }
+  &__paragraf {
+    @include paragraf-font;
+    margin-top: 32px;
+  }
+}

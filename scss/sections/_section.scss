@@ -1,0 +1,136 @@
+.section {
+  width: 100%;
+  &__container {
+    @include section-container;
+  }
+  &__displey {
+    @extend %flex-sb;
+    align-items: start;
+  }
+  &__right {
+    @extend %flex-sb;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-left: 125px;
+  }
+  &__left__paragraf {
+    display: inline-block;
+  }
+  &__left__number {
+    margin-right: 25.5px;
+    @include section-left-font;
+  }
+  &__left__number:hover {
+    color: rgba(14, 135, 132, 1);
+    cursor: pointer;
+  }
+  &__left__paragraf {
+    @include section-left-font;
+  }
+  &__left__paragraf:hover {
+    color: rgba(51, 61, 75, 1);
+    cursor: pointer;
+  }
+  &__left__border {
+    width: 255px;
+    height: 1px;
+    background: #83888f;
+    opacity: 0.25;
+    margin: 24px 0;
+  }
+  &__right__displey {
+    width: 730px;
+    height: 354px;
+    margin-bottom: 88px;
+  }
+  &__right__info {
+    @extend %flex-sb;
+  }
+  &__right__title {
+    display: inline-block;
+    @include title-font;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888f;
+  }
+  &__right__vector:hover {
+    cursor: pointer;
+  }
+  &__right__cards {
+    padding-top: 56px;
+    @extend %flex-sb;
+  }
+  &__right__card {
+    width: 228px;
+    height: 250px;
+    background: #f4f1eb;
+    border-radius: 8px;
+    color: rgba(51, 61, 75, 1);
+  }
+  &__right__card:hover {
+    background-color: rgba(253, 214, 186, 1);
+    cursor: pointer;
+  }
+  &__right-card-color {
+    background-color: rgba(14, 135, 132, 1);
+  }
+  &__right__card__title {
+    margin-left: 28px;
+    padding-top: 32px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__right-card-title-color {
+    color: rgba(255, 255, 255, 1);
+  }
+  &__right-card-title-color:hover {
+    color: rgba(51, 61, 75, 1);
+  }
+  &__box {
+    width: 730px;
+    height: 208px;
+    background: #2c343e;
+    border-radius: 10px;
+  }
+  &__box-container {
+    width: 602px;
+    height: 120px;
+    margin: 0 auto;
+    padding-top: 31px;
+  }
+  &__box-info-title {
+    @include paragraf-font;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  &__box-info-paragraf {
+    @include title-font;
+    font-size: 24px;
+    line-height: 40px;
+    color: #ffffff;
+  }
+  &__box-info-paragraf-color {
+    color: rgba(14, 135, 132, 1);
+  }
+  &__box-anchor {
+    @include title-font;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #fefcf7;
+    text-decoration: none;
+    padding: 15px 35px;
+    background: #66d2cf;
+    border-radius: 6px;
+    margin-top: 40px;
+    margin-left: 513px;
+  }
+  &__box-anchor:hover {
+    color: rgba(51, 61, 75, 1);
+    background-color: rgba(253, 214, 186, 1);
+  }
+}

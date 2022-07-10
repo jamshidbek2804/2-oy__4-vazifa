@@ -1,0 +1,59 @@
+.footer {
+  &__container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 88px 0;
+  }
+  &__info {
+    width: 1280px;
+    height: 120px;
+    background-color: rgba(44, 52, 62, 1);
+  }
+  &__info-container {
+    margin: 0 85px;
+    padding: 47px 0;
+  }
+  &__displey {
+    @extend %flex-sb;
+  }
+  &__start {
+    width: 622px;
+    height: 26px;
+    @extend %flex-sb;
+  }
+  &__logo {
+    width: 236px;
+    height: 26px;
+    // margin-right: 103px;
+  }
+  &__navbar {
+    list-style-type: none;
+  }
+  &__nav-list {
+    display: inline-block;
+  }
+  &__nav-list-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Barlow" sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    color: #83888f;
+  }
+  &__nav-list-item:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  &__nav-list-item-2 {
+    margin: 0 32px;
+  }
+}
+svg:hover path {
+  fill: rgba(253, 214, 186, 1);
+  cursor: pointer;
+}
+.twitter {
+  margin: 0 24px;
+}

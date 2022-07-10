@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  &__container {
+    @extend %flex-sb;
+    @include container;
+  }
+  &__nav {
+    list-style-type: none;
+  }
+  &__nav-link {
+    display: inline-block;
+  }
+  &__nav-link-item {
+    @include nav-font;
+    color: $header_nav-color;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  &__nav-link-item:hover {
+    color: rgba(51, 61, 75, 1);
+  }
+  &__nav-link-item-2 {
+    margin: 0 16px;
+  }
+}
